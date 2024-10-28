@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allevia - Course Lessons</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="top-bar"></div>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/first Aid Logo.png" alt="Allevia Logo" class="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="resources.html">Resources</a>
+            <a href="learning-path.html">My Learning Path</a>
+        </nav>
+    </header>
+
+    <div class="course-content">
+        <!-- CPR Course -->
+        <div class="lesson-section" data-course="cpr">
+            <h2 class="lesson-title">What is CPR?</h2>
+            <p class="lesson-description">CPR (Cardiopulmonary Resuscitation) is a life-saving technique used in emergencies when someone's breathing or heartbeat has stopped. It involves chest compressions and rescue breaths to help maintain blood flow and oxygenation.</p>
+            <button class="continue-button">Continue</button>
+        </div>
+        
+        <div class="quiz-section" data-course="cpr" style="display: none;">
+            <h2 class="quiz-question">What does CPR stand for?</h2>
+            <div class="quiz-options">
+                <input type="radio" id="cpr-option1" name="cpr-quiz" value="option1">
+                <label for="cpr-option1">Cardiac Pulmonary Response</label><br>
+                <input type="radio" id="cpr-option2" name="cpr-quiz" value="option2">
+                <label for="cpr-option2">Cardiopulmonary Resuscitation</label><br>
+                <input type="radio" id="cpr-option3" name="cpr-quiz" value="option3">
+                <label for="cpr-option3">Cardiac Personal Resuscitation</label><br>
+            </div>
+            <button class="check-button">Check</button>
+            <p class="feedback"></p>
+            <button class="next-lesson-button" style="display: none;">Next Lesson</button>
+        </div>
+
+        <!-- Basic First Aid Course -->
+        <div class="lesson-section" data-course="basic-first-aid">
+            <h2 class="lesson-title">First Aid Fundamentals</h2>
+            <p class="lesson-description">Learn the basics of first aid, such as treating minor cuts, burns, and sprains. Knowing these fundamentals can make a significant difference in emergencies.</p>
+            <button class="continue-button">Continue</button>
+        </div>
+        
+        <div class="quiz-section" data-course="basic-first-aid" style="display: none;">
+            <h2 class="quiz-question">What is the primary purpose of first aid?</h2>
+            <div class="quiz-options">
+                <input type="radio" id="bfa-option1" name="bfa-quiz" value="option1">
+                <label for="bfa-option1">To diagnose illnesses</label><br>
+                <input type="radio" id="bfa-option2" name="bfa-quiz" value="option2">
+                <label for="bfa-option2">To provide immediate care in emergencies</label><br>
+                <input type="radio" id="bfa-option3" name="bfa-quiz" value="option3">
+                <label for="bfa-option3">To replace professional medical treatment</label><br>
+            </div>
+            <button class="check-button">Check</button>
+            <p class="feedback"></p>
+            <button class="next-lesson-button" style="display: none;">Next Lesson</button>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allevia | Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="top-bar"></div>
+    
+    <!-- Container Wrapper -->
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="images/first Aid Logo.png" alt="Allevia Logo" class="logo">
+            </div>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="resources.html">Resources</a>
+                <a href="learning-path.html">My Learning Path</a>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search for a course...">
+                    <button id="search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- Courses Section -->
+        <section class="courses-section">
+            <h2 class="section-heading">Explore Our Courses</h2>
+
+            <!-- Course Categories -->
+            <div class="course-categories">
+                <button class="category-button" data-category="all">All</button>
+                <button class="category-button" data-category="Basic First Aid">Basic First Aid</button>
+                <button class="category-button" data-category="CPR & Emergency Response">CPR & Emergency Response</button>
+                <button class="category-button" data-category="Advanced Care Techniques">Advanced Care Techniques</button>
+                <button class="category-button" data-category="First Aid for Children">First Aid for Children</button>
+                <button class="category-button" data-category="Trauma & Emergency Scenarios">Trauma & Emergency Scenarios</button>
+            </div>
+
+            <!-- Courses List -->
+            <div class="courses-list">
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="First Aid Fundamentals" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">First Aid Fundamentals</h3>
+                            <p class="course-description">Covering the basics of first aid, such as treating minor cuts, burns, and sprains.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Managing Allergic Reactions" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Managing Allergic Reactions</h3>
+                            <p class="course-description">Recognize and respond to allergic reactions, including the use of EpiPens.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link" >
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="First Aid for Common Injuries" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">First Aid for Common Injuries</h3>
+                            <p class="course-description">Practical first aid for everyday household and workplace injuries.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Burns and Scalds Treatment" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Burns and Scalds Treatment</h3>
+                            <p class="course-description">How to treat and manage burns and scalds effectively.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Handling Fractures and Sprains" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Handling Fractures and Sprains</h3>
+                            <p class="course-description">Techniques for immobilizing and managing broken bones and sprains.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Dealing with Choking" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Dealing with Choking</h3>
+                            <p class="course-description">First aid steps for assisting someone who is choking.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Recognizing Symptoms of Common Illnesses" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Recognizing Symptoms of Common Illnesses</h3>
+                            <p class="course-description">Identifying and responding to symptoms of common illnesses like flu or food poisoning.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Basic First Aid for Sports Injuries" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Basic First Aid for Sports Injuries</h3>
+                            <p class="course-description">Treating sprains, strains, and other sports-related injuries.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="Understanding Vital Signs" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Understanding Vital Signs</h3>
+                            <p class="course-description">How to check and interpret vital signs such as pulse and respiration rate.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="Basic First Aid">
+                        <img src="images/briefcase 1.png" alt="First Aid for Animal Bites" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">First Aid for Animal Bites</h3>
+                            <p class="course-description">Proper treatment and management of animal bites and stings.</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- CPR & Emergency Response -->
+                <a href="course-lessons.html" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="CPR and Emergency Response Techniques" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">CPR and Emergency Response Techniques</h3>
+                            <p class="course-description">Mastering life-saving CPR, AED usage, and handling emergencies.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Hands-Only CPR" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Hands-Only CPR</h3>
+                            <p class="course-description">Latest hands-only CPR techniques for adults and children.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Automated External Defibrillator (AED) Training" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Automated External Defibrillator (AED) Training</h3>
+                            <p class="course-description">In-depth training on AED devices during cardiac emergencies.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Emergency Response in Remote Areas" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Emergency Response in Remote Areas</h3>
+                            <p class="course-description">Techniques for handling emergencies in remote or wilderness settings.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Managing Shock" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Managing Shock</h3>
+                            <p class="course-description">Recognizing and treating various types of shock.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Basic Life Support (BLS)" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Basic Life Support (BLS)</h3>
+                            <p class="course-description">Essential skills and protocols for supporting life in emergency situations.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Emergency Childbirth" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Emergency Childbirth</h3>
+                            <p class="course-description">Assisting in emergency childbirth scenarios.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Drowning Prevention and Response" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Drowning Prevention and Response</h3>
+                            <p class="course-description">Techniques for preventing and responding to drowning incidents.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="Crisis Communication Skills" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">Crisis Communication Skills</h3>
+                            <p class="course-description">Effective communication during emergencies.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="course-link">
+                    <div class="course-item" data-category="CPR & Emergency Response">
+                        <img src="images/doctor.png" alt="First Responder Basics" class="course-image">
+                        <div class="course-info">
+                            <h3 class="course-title">First Responder Basics</h3>
+                            <p class="course-description">Introduction to the role and responsibilities of a first responder.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Advanced Care Techniques -->
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Advanced Wound Management" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Advanced Wound Management</h3>
+            <p class="course-description">Techniques for treating severe wounds, including suturing and advanced dressing.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Advanced Cardiac Life Support (ACLS)" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Advanced Cardiac Life Support (ACLS)</h3>
+            <p class="course-description">Detailed protocols for managing cardiac arrest and other life-threatening cardiac conditions.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Managing Severe Trauma" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Managing Severe Trauma</h3>
+            <p class="course-description">Strategies for stabilizing and treating severe trauma injuries before professional help arrives.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Intravenous (IV) Therapy Basics" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Intravenous (IV) Therapy Basics</h3>
+            <p class="course-description">Understanding and administering IV fluids.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Emergency Airway Management" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Emergency Airway Management</h3>
+            <p class="course-description">Techniques for maintaining and securing airways in critical situations.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Advanced Burn Treatment" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Advanced Burn Treatment</h3>
+            <p class="course-description">Specialized care for severe burns and scalds.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Caring for Spinal Injuries" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Caring for Spinal Injuries</h3>
+            <p class="course-description">Proper techniques for immobilizing and handling spinal injuries.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Field Triage Techniques" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Field Triage Techniques</h3>
+            <p class="course-description">Assessing and prioritizing care in multi-casualty events.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Using Medical Equipment" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Using Medical Equipment</h3>
+            <p class="course-description">Proper use and maintenance of advanced medical equipment.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Advanced Care Techniques">
+        <img src="images/hand-heart.jpg" alt="Bloodborne Pathogens Training" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Bloodborne Pathogens Training</h3>
+            <p class="course-description">Safety measures and protocols for handling bloodborne pathogens.</p>
+        </div>
+    </div>
+</a>
+
+
+<!-- First Aid for Children -->
+<a href="#" class="course-link">
+    <div class="course-item" data-category="First Aid for Children">
+        <img src="images/baby-bottle.png" alt="Pediatric First Aid Essentials" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Pediatric First Aid Essentials</h3>
+            <p class="course-description">Key first aid techniques for infants and young children.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="First Aid for Children">
+        <img src="images/baby-bottle.png" alt="Child CPR and Choking" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Child CPR and Choking</h3>
+            <p class="course-description">Specialized CPR and emergency response techniques for children.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="First Aid for Children">
+        <img src="images/baby-bottle.png" alt="Childproofing Your Home" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Childproofing Your Home</h3>
+            <p class="course-description">Tips and techniques for making your home safer for young children.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="First Aid for Children">
+        <img src="images/baby-bottle.png" alt="Treating Common Childhood Injuries" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Treating Common Childhood Injuries</h3>
+            <p class="course-description">Handling falls, cuts, and other common injuries in children.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="First Aid for Children">
+        <img src="images/baby-bottle.png" alt="Recognizing Childhood Illnesses" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Recognizing Childhood Illnesses</h3>
+            <p class="course-description">Identifying and responding to symptoms of common childhood illnesses.</p>
+        </div>
+    </div>
+</a>
+
+<!-- Trauma & Emergency Scenarios-->
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Trauma & Emergency Scenarios">
+        <img src="images/ambulance.jpg" alt="Responding to Road Traffic Accidents" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Responding to Road Traffic Accidents</h3>
+            <p class="course-description">First response techniques for dealing with injuries from road traffic accidents.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Trauma & Emergency Scenarios">
+        <img src="images/ambulance.jpg" alt="Natural Disaster Preparedness" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Natural Disaster Preparedness</h3>
+            <p class="course-description">How to prepare for and respond to natural disasters like earthquakes and floods.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Trauma & Emergency Scenarios">
+        <img src="images/ambulance.jpg" alt="Crisis Management for Mass Casualties" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Crisis Management for Mass Casualties</h3>
+            <p class="course-description">Techniques for managing and prioritizing care in mass casualty events.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Trauma & Emergency Scenarios">
+        <img src="images/ambulance.jpg" alt="Handling Workplace Emergencies" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Handling Workplace Emergencies</h3>
+            <p class="course-description">First aid and emergency response for workplace accidents.</p>
+        </div>
+    </div>
+</a>
+<a href="#" class="course-link">
+    <div class="course-item" data-category="Trauma & Emergency Scenarios">
+        <img src="images/ambulance.jpg" alt="Responding to Violent Crimes" class="course-image">
+        <div class="course-info">
+            <h3 class="course-title">Responding to Violent Crimes</h3>
+            <p class="course-description">First aid techniques for injuries resulting from violent crimes.</p>
+        </div>
+    </div>
+</a>
+
+</section>
+    </div>
+</body>
+</html>
