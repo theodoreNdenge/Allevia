@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Allevia - Course Lessons</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <script src="script.js"></script>
 </head>
 <body>
 
@@ -17,21 +16,27 @@
         </div>
         <nav class="nav-links">
             <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="resources.html">Resources</a>
+            <a href="courses.html">Courses</a>
             <a href="learning-path.html">My Learning Path</a>
+            <a href="resources.html">Resources</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
     <div class="course-content">
         <!-- CPR Course -->
         <div class="lesson-section" data-course="cpr">
+            <p class="lesson-number">Lesson 1</p>
             <h2 class="lesson-title">What is CPR?</h2>
             <p class="lesson-description">CPR (Cardiopulmonary Resuscitation) is a life-saving technique used in emergencies when someone's breathing or heartbeat has stopped. It involves chest compressions and rescue breaths to help maintain blood flow and oxygenation.</p>
-            <button class="continue-button">Continue</button>
+            <div class="button-container">
+                <button class="continue-button">Continue</button>
+                <button class="previous-button">Previous</button>
+            </div>
         </div>
         
         <div class="quiz-section" data-course="cpr" style="display: none;">
+            <p class="lesson-number">Lesson 1</p>
             <h2 class="quiz-question">What does CPR stand for?</h2>
             <div class="quiz-options">
                 <input type="radio" id="cpr-option1" name="cpr-quiz" value="option1">
@@ -46,27 +51,111 @@
             <button class="next-lesson-button" style="display: none;">Next Lesson</button>
         </div>
 
+        <!-- CPR Course - Lesson 2 -->
+<div class="lesson-section" data-course="cpr-lesson2" style="display: none;">
+    <p class="lesson-number">Lesson 2</p>
+    <h2 class="lesson-title">Steps to Perform CPR</h2>
+    <p class="lesson-description">Follow these steps to perform CPR correctly. Remember, each step is crucial in saving a life.</p>
+    <img src="images/cpr-steps1.jpg" alt="Steps to Perform CPR" class="lesson-image"> 
+    <div class="button-container">
+        <button class="continue-button">Continue</button>
+        <button class="previous-button">Previous</button>
+    </div>
+</div>
+
+<div class="quiz-section" data-course="cpr-lesson2" style="display: none;">
+    <h2 class="quiz-question">What is the correct order of performing CPR?</h2>
+    <div class="quiz-options">
+        <div class="quiz-option">
+            <input type="radio" id="cpr-lesson2-option1" name="cpr-lesson2-quiz" value="option1">
+            <label for="cpr-lesson2-option1">
+                <ol>
+                    <li>Shake and Shout</li>
+                    <li>Call 911</li>
+                    <li>Check for breathing</li>
+                    <li>Place your hands at the center of their chest</li>
+                    <li>Push hard--about twice per second</li>
+                    <li>If you've had training, repeat cycles of 30 chest pushes and 2 rescue breaths</li>
+                </ol>
+            </label>
+        </div>
+        <div class="quiz-option">
+            <input type="radio" id="cpr-lesson2-option2" name="cpr-lesson2-quiz" value="option2">
+            <label for="cpr-lesson2-option2">
+                <ol>
+                    <li>Check for breathing</li>
+                    <li>Call 911</li>
+                    <li>Shake and Shout</li>
+                    <li>Place your hands at the center of their chest</li>
+                    <li>Push hard--about twice per second</li>
+                    <li>If you've had training, repeat cycles of 30 chest pushes and 2 rescue breaths</li>
+                </ol>
+            </label>
+        </div>
+        <div class="quiz-option">
+            <input type="radio" id="cpr-lesson2-option3" name="cpr-lesson2-quiz" value="option3">
+            <label for="cpr-lesson2-option3">
+                <ol>
+                    <li>Check for breathing</li>
+                    <li>Place your hands at the center of their chest</li>
+                    <li>Shake and Shout</li>
+                    <li>Call 911</li>
+                    <li>Push hard--about twice per second</li>
+                    <li>If you've had training, repeat cycles of 30 chest pushes and 2 rescue breaths</li>
+                </ol>
+            </label>
+        </div>
+    </div>
+    
+    <button class="check-button">Check</button>
+    <p class="feedback"></p>
+    <button class="next-lesson-button" style="display: none;">Proceed</button>
+</div>
+
+<div class="congratulations-section" style="display: none;">
+    <h2>Congratulations!</h2>
+    <p>You have successfully completed the CPR course.</p>
+    <div class="button-container">
+        <button class="finish-course-button">Finish Course</button>
+    </div>
+</div>
+
+
+
         <!-- Basic First Aid Course -->
         <div class="lesson-section" data-course="basic-first-aid">
+            <p class="lesson-number">Lesson 1</p>
             <h2 class="lesson-title">First Aid Fundamentals</h2>
             <p class="lesson-description">Learn the basics of first aid, such as treating minor cuts, burns, and sprains. Knowing these fundamentals can make a significant difference in emergencies.</p>
-            <button class="continue-button">Continue</button>
+            <div class="button-container">
+                <button class="continue-button">Continue</button>
+                <button class="previous-button">Previous</button>
+            </div>
         </div>
         
         <div class="quiz-section" data-course="basic-first-aid" style="display: none;">
+            <p class="lesson-number">Lesson 1</p>
             <h2 class="quiz-question">What is the primary purpose of first aid?</h2>
             <div class="quiz-options">
-                <input type="radio" id="bfa-option1" name="bfa-quiz" value="option1">
+                <input type="radio" id="bfa-option1" name="basic-first-aid-quiz" value="option1">
                 <label for="bfa-option1">To diagnose illnesses</label><br>
-                <input type="radio" id="bfa-option2" name="bfa-quiz" value="option2">
+                <input type="radio" id="bfa-option2" name="basic-first-aid-quiz" value="option2">
                 <label for="bfa-option2">To provide immediate care in emergencies</label><br>
-                <input type="radio" id="bfa-option3" name="bfa-quiz" value="option3">
+                <input type="radio" id="bfa-option3" name="basic-first-aid-quiz" value="option3">
                 <label for="bfa-option3">To replace professional medical treatment</label><br>
             </div>
             <button class="check-button">Check</button>
             <p class="feedback"></p>
-            <button class="next-lesson-button" style="display: none;">Next Lesson</button>
+            <button class="next-lesson-button" style="display: none;">Proceed</button>
         </div>
 
+        <div class="congratulations-section" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You have successfully completed the CPR course.</p>
+            <div class="button-container">
+                <button class="finish-course-button">Finish Course</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
