@@ -315,6 +315,128 @@ button:hover {
     font-weight: bold;
 }
 
+h1, h2 {
+    color: #f52f36;
+    text-align: center;
+}
+
+.resources-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.resources-section {
+    margin-bottom: 40px;
+}
+
+.pdf-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pdf-list li {
+    margin-bottom: 10px;
+}
+
+.pdf-list a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pdf-list a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #4A0D0F;
+    color: #ffffff;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.footer .column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer p,
+.footer a {
+    font-size:25px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer .social-icons a {
+    gap: 25px;
+    display: inline-block;
+    margin: 5px;
+    color: #ffffff;
+    font-size: 40px;
+    transition: transform 0.3s ease; 
+}
+
+.footer .social-icons a:hover {
+    color: #F5383F;
+    transform: scale(1.2); 
+}
+
+
+.footer .map img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.footer_rights {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    border-top: 0px solid #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #4A0D0F;
+    color: #ffffff;
+}
+
+hr {
+    width: 50%; 
+    height: 3px;
+    background-color: #ffffff; 
+    border: none; 
+    margin: 0px 0px; 
+}
+
 /* Desktop container utility class */
 .container {
     max-width: 1536px;
